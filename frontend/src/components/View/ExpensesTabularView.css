@@ -1,0 +1,109 @@
+
+
+.tabular_view_filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.transaction-table {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; 
+}
+
+
+.expense_table_body {
+    max-height: 450px;
+    overflow-x: auto;  
+    overflow-y: auto;
+    white-space: nowrap;
+    display: block; 
+}
+
+.tabular_view_filter_select_option{
+    padding: 6px 10px;
+    margin: 0px 5px;
+}
+
+.tabular_view_filter_edit_btn{
+    padding: 6px 10px;
+    margin: 0px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid orange;
+    border-radius: 2px;
+    background-color: rgb(255, 239, 210);
+    color: orange;
+    cursor: pointer;
+}
+
+.tabular_view_filter_delete_btn{
+    padding: 6px 10px;
+    margin: 0px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 2px;
+    background-color: rgb(255, 209, 209);
+    color: red;
+    cursor: pointer;
+}
+
+
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    border: 2px solid #ddd; 
+    background-color: #101f65;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0; /* Sticks the header to the top */
+    z-index: 1; /* Ensures it stays above other content */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
+  

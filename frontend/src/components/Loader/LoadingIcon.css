@@ -1,0 +1,36 @@
+.loader_container{
+    margin:5px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader_message{
+    margin-left: 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #717171;
+}
+
+.loader_icon{
+    animation: loader 1s ease infinite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+@keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}

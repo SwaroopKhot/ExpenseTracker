@@ -1,0 +1,93 @@
+{
+    "test@gmail.com": {
+        "account": {
+            "username": "test",
+            "email": "test@gmail.com",
+            "password": "scrypt:32768:8:1$DILUvQ7httwHpROm$a11bf45eacee33255e3b8172bf0892b1d3deadfea60247fcdcd1392feae4a227ea08ab563aff7e7b1db3e3144588a2f595d70172ac00357aa3dd48a15939b9ee",
+            "budget": 10000
+        },
+        "expense": [
+            {
+                "amount": "1500",
+                "title": "Groceries",
+                "category": "Food",
+                "date": "2025-03-15",
+                "payment": "Credit Card",
+                "id": 0,
+                "loading": false
+            },
+            {
+                "amount": "800",
+                "title": "Bus Ticket",
+                "category": "Travel",
+                "date": "2025-03-10",
+                "payment": "Cash",
+                "id": 1
+            },
+            {
+                "amount": "350",
+                "title": "Electricity Bill",
+                "category": "Bills",
+                "date": "2025-02-22",
+                "payment": "UPI",
+                "id": 2
+            },
+            {
+                "amount": "1200",
+                "title": "Movie Night",
+                "category": "Entertainment",
+                "date": "2025-03-18",
+                "payment": "Debit Card",
+                "id": 3
+            },
+            {
+                "amount": "2200",
+                "title": "Medical Checkup",
+                "category": "Health",
+                "date": "2025-02-14",
+                "payment": "Bank Transfer",
+                "id": 4
+            },
+            {
+                "amount": "550",
+                "title": "Stationery",
+                "category": "Education",
+                "date": "2025-03-21",
+                "payment": "Cash",
+                "id": 5
+            },
+            {
+                "amount": "1300",
+                "title": "Weekend Brunch",
+                "category": "Food",
+                "date": "2025-03-24",
+                "payment": "UPI",
+                "id": 6
+            },
+            {
+                "amount": "300",
+                "title": "Mobile Recharge",
+                "category": "Bills",
+                "date": "2025-03-17",
+                "payment": "Debit Card",
+                "id": 7
+            },
+            {
+                "amount": "750",
+                "title": "Gym Subscription",
+                "category": "Health",
+                "date": "2025-03-23",
+                "payment": "Credit Card",
+                "id": 8
+            },
+            {
+                "amount": "2000",
+                "title": "Clothing",
+                "category": "Shopping",
+                "date": "2025-03-16",
+                "payment": "UPI",
+                "id": 9
+            }
+        ]
+    }
+}

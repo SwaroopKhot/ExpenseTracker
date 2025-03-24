@@ -1,0 +1,42 @@
+.header_main_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(19, 19, 85);
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.header_title{
+    margin: 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+
+.header_nav_tabs_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_nav_tabs_div>a{
+    margin: 0px 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.header_nav_tabs_div>a:hover{
+    color: #999;
+    transition: 0.4s ease;
+}

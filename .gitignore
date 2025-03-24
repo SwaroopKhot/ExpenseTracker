@@ -1,0 +1,22 @@
+# Node.js
+/frontend/node_modules/
+
+# Python
+/backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+*__pycache__/
+*__pycache__/*
+backend/venv
+
+
+# Logs and error reporting
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE specific files
+.vscode/

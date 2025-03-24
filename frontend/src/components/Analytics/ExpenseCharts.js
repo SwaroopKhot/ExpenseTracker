@@ -13,6 +13,7 @@ ChartJS.register(ArcElement, BarElement, LineElement, PointElement, CategoryScal
 const ExpenseCharts = ({ data }) => {
   const [{ user }, dispatch] = useStateValue();
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false)
 
   const [expenses, setExpenses] = useState([]);
   const [budget, setBudget] = useState(0);
@@ -47,14 +48,18 @@ const ExpenseCharts = ({ data }) => {
     // Fetch Expenses:
     const fetchExpenses = async () => {
       if (user) {
+        setLoading(true)
         const payload = {
           email: user.email
         };
         try {
           const res = await httpInstance.post(api.getExpense(), payload);
           setExpenses(res.data.data || []);
+
+          setLoading(false)
         } catch (err) {
           console.error('Error fetching expenses:', err);
+          setLoading(false)
         }
       }
     };
@@ -63,7 +68,10 @@ const ExpenseCharts = ({ data }) => {
     fetchExpenses();
   }, [user, navigate, dispatch]);
 
-  if (!expenses.length) return <div>Loading...</div>;
+  
+  if (loading) return <div>Loading...</div>;
+
+  if (!expenses.length && budget === 0) return <div>No Data Available</div>;
 
   const categories = Array.from(new Set(expenses.map(exp => exp.category)));
   const paymentMethods = Array.from(new Set(expenses.map(exp => exp.payment)));
